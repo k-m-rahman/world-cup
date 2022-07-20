@@ -7,8 +7,8 @@
 
 
 /*------------------
-    common styles 
- -------------------*/
+     common styles 
+  -------------------*/
 
 * {
     margin: 0;
@@ -26,8 +26,8 @@ main {
 
 
 /*------------------
-    top-banner styles 
- -------------------*/
+     top-banner styles 
+  -------------------*/
 
 .top-banner {
     background: #161616;
@@ -40,6 +40,7 @@ main {
     align-items: center;
     gap: 34px;
     overflow: hidden;
+
     margin-bottom: 100px;
 }
 
@@ -50,6 +51,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    border: 2px solid yellow;
 
 }
 
@@ -95,8 +97,8 @@ main {
 }
 
 /*------------------
-    mid section styles 
- -------------------*/
+     mid section styles 
+  -------------------*/
 
 main {
     width: 95%;
@@ -148,76 +150,69 @@ main {
     transition: 0.4s;
 }
 
-.blogs {
+.matches {
     width: calc(100% - 280px);
     height: fit-content;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    row-gap: 30px;
+    justify-items: center;
 }
 
-.blog {
-
+.match {
+    width: 20vw;
+    height: 205px;
     box-shadow: 0px 0px 1.5px 0.5px rgb(218, 213, 213);
     border-radius: 10px;
-    height: 300px;
-}
-
-.blog img {
-    width: 100%;
-}
-
-.blog-details {
-    padding: 10px 11px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-
-}
-
-.blog-subject {
-
-    color: #161616;
-    border: 1.2px solid black;
-    width: 100px;
-    height: 32px;
-    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
 }
 
-.blog-heading {
-    font-family: 'Poppins';
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 25px;
-    color: #161616;
-}
-
-.activities {
+.match-info {
+    width: 80%;
+    height: 65%;
     display: flex;
-    gap: 26px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.match-flags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.match-flags img {
+    width: 40%;
+}
+
+.match-details {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.match-details p {
     font-family: 'Poppins';
     font-weight: 400;
-    font-size: 13px;
-    line-height: 25px;
-    /* identical to box height, or 162% */
-    color: rgba(22, 22, 22, 0.7);
-}
-
-.fa-regular {
-    width: 18px;
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: #4D4D4D;
 }
 
 .view-all {
     display: none;
 }
 
+
 /*------------------
-    footer styles 
- -------------------*/
+     footer styles 
+  -------------------*/
 
 footer {
     height: 350px;
@@ -291,7 +286,6 @@ hr {
     color: #FF0000;
 }
 
-
 /*-----------------------
     Responsiveness styles 
  ------------------------*/
@@ -300,6 +294,7 @@ hr {
 /*-----------------------
     Tablet styles 
  ------------------------*/
+
 
 @media screen and (min-width:768px) and (max-width:1023px) {
 
@@ -362,22 +357,26 @@ hr {
 
     .menu a {
         background-color: rgb(255, 254, 254);
-        width: 180px;
+        width: 170px;
         height: 50px;
         box-shadow: 0px 0px 1.5px 0.5px rgb(218, 213, 213);
+
     }
 
-    .blogs {
+    .matches {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
+        justify-content: center;
+
+        gap: 20px;
     }
 
-    .blog {
+    .match {
         width: 100%;
-        height: auto;
+        height: 250px;
     }
 
-    .blog:nth-child(9) {
+    .match:nth-child(9) {
         display: none;
     }
 
