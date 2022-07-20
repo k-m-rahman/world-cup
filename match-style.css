@@ -51,8 +51,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border: 2px solid yellow;
-
 }
 
 .top-section-details h1 {
