@@ -280,7 +280,7 @@ footer {
     background: #161616;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 17px;
     align-items: center;
 }
 
@@ -293,6 +293,7 @@ footer h1 {
     color: #FFFFFF;
     margin-top: 7%;
     margin-bottom: 1%;
+
 }
 
 hr {
@@ -311,7 +312,7 @@ hr {
     text-decoration: none;
     font-family: 'Poppins';
     font-weight: 500;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 24px;
     font-feature-settings: 'liga' off;
     color: #B9B9B9;
@@ -325,7 +326,6 @@ hr {
 .social-links {
     transform: scale(1.5);
     display: flex;
-    padding: 15px;
     gap: 50px;
 
 }
@@ -333,6 +333,7 @@ hr {
 .social-links a:hover {
     transform: scale(1.7);
     transition: 0.4s;
+
 }
 
 .fa-facebook {
@@ -463,6 +464,10 @@ hr {
         text-align: center;
     }
 
+    footer {
+        height: 360px;
+    }
+
     .footer-links {
         flex-wrap: wrap;
         gap: 30px;
@@ -584,7 +589,8 @@ hr {
 
 
     footer {
-        height: auto;
+        height: 730px;
+        gap: 50px;
     }
 
     .footer-links {
