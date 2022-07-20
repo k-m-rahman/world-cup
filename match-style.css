@@ -126,7 +126,7 @@ main {
     content: '';
     background-image: linear-gradient(rgb(85, 196, 240), rgb(63, 63, 147), rgb(175, 27, 175));
     width: 150%;
-    height: 350%;
+    height: 400%;
     position: absolute;
     animation: rotate 2s linear infinite;
 
